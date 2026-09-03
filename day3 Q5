@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int celsius, fahrenheit;
+    
+    // User se Celsius mein input lena
+    scanf("%d", &celsius);
+    
+    // Celsius ko Fahrenheit mein convert karne ka formula
+    fahrenheit = (celsius * 9 / 5) + 32;
+    
+    // Output print karna exact test case format mein
+    printf("Fahrenheit=%d\n", fahrenheit);
+    
+    return 0;
+}
