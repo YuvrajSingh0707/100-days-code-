@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h> // Power calculate karne ke liye math library zaroori hai
+
+int main() {
+    double p, r, t;
+    double si, ci;
+    
+    // User se Principal, Rate, aur Time input lena
+    scanf("%lf %lf %lf", &p, &r, &t);
+    
+    // Simple Interest calculate karna
+    si = (p * r * t) / 100.0;
+    
+    // Compound Interest calculate karna (pow function ka use karke)
+    ci = p * pow((1.0 + r / 100.0), t) - p;
+    
+    // Output print karna. %g extra zeros ko hata deta hai taaki test case jaisa format aaye
+    printf("Simple Interest=%g, Compound Interest=%g\n", si, ci);
+    
+    return 0;
+}
