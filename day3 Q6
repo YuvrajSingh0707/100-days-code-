@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, temp;
+    
+    // User se do numbers input lena
+    scanf("%d %d", &num1, &num2);
+    
+    // Swapping logic using third variable
+    temp = num1;   // num1 ki value temp mein save ki (pehla glass khali kiya)
+    num1 = num2;   // num2 ki value num1 mein daali (dusra glass pehle mein daala)
+    num2 = temp;   // temp (purana num1) ki value num2 mein daali
+    
+    // Swapped output print karna exact test case format mein
+    printf("After swap: %d %d\n", num1, num2);
+    
+    return 0;
+}
