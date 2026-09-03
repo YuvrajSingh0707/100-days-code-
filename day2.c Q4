@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float radius;
+    float area, circumference;
+    
+    // Pi ki value ko define kar rahe hain
+    const float PI = 3.14159; 
+    
+    // User se radius input lena
+    scanf("%f", &radius);
+    
+    // Area calculate karna: Pi * r * r
+    area = PI * radius * radius;
+    
+    // Circumference calculate karna: 2 * Pi * r
+    circumference = 2 * PI * radius;
+    
+    // Output ko exact format mein print karna (%.2f point ke baad 2 numbers ke liye)
+    printf("Area=%.2f, Circumference=%.2f\n", area, circumference);
+    
+    return 0;
+}
