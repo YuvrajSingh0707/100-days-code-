@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n, sum;
+    
+    // User se number (n) input lena
+    scanf("%d", &n);
+    
+    // Sum of first n natural numbers calculate karna
+    sum = n * (n + 1) / 2;
+    
+    // Exact test case format mein output print karna
+    printf("Sum=%d\n", sum);
+    
+    return 0;
+}
