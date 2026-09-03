@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int length, breadth;
+    int area, perimeter;
+    
+    // User se length aur breadth input lena
+    scanf("%d %d", &length, &breadth);
+    
+    // Area calculate karna (length * breadth)
+    area = length * breadth;
+    
+    // Perimeter calculate karna 2 * (length + breadth)
+    perimeter = 2 * (length + breadth);
+    
+    // Output print karna test case ke exact format mein
+    printf("Area=%d, Perimeter=%d\n", area, perimeter);
+    
+    return 0;
+}
